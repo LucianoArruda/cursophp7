@@ -1,10 +1,19 @@
 <?php
 require_once ("config.php");
 
-$root = new Usuario();
+//root = new Usuario();
+//$root->loadById(4);
+//echo $root;
 
-$root->loadById(4);
+//$lista = Usuario::getList();
+//echo json_encode($lista);
 
-echo $root;
+//$busca = Usuario::search("u");
+//echo json_encode($busca);
+
+$usuario = new Usuario();
+$usuario->login("joao", "dadada");
+
+echo $usuario;
 
 ?>
