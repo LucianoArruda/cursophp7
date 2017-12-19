@@ -16,10 +16,16 @@ require_once ("config.php");
 
 //echo $usuario;
 
-$aluno = new Usuario("Aluno", "#$%&%$");
+//$aluno = new Usuario("Aluno", "#$%&%$");
+//$aluno->insert();
+//echo $aluno;
 
-$aluno->insert();
+$usuario = new Usuario();
 
-echo $aluno;
+$usuario->loadById(8);
+
+$usuario->update("professor", "prof");
+
+echo $usuario;
 
 ?>
