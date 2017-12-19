@@ -11,9 +11,15 @@ require_once ("config.php");
 //$busca = Usuario::search("u");
 //echo json_encode($busca);
 
-$usuario = new Usuario();
-$usuario->login("joao", "dadada");
+//$usuario = new Usuario();
+//$usuario->login("joao", "dadada");
 
-echo $usuario;
+//echo $usuario;
+
+$aluno = new Usuario("Aluno", "#$%&%$");
+
+$aluno->insert();
+
+echo $aluno;
 
 ?>
