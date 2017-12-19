@@ -20,12 +20,15 @@ require_once ("config.php");
 //$aluno->insert();
 //echo $aluno;
 
+//$usuario = new Usuario();
+//$usuario->loadById(8);
+//$usuario->update("professor", "prof");
+//echo $usuario;
+
+
 $usuario = new Usuario();
-
-$usuario->loadById(8);
-
-$usuario->update("professor", "prof");
+$usuario->loadById(7);
+$usuario->delete();
 
 echo $usuario;
-
 ?>
